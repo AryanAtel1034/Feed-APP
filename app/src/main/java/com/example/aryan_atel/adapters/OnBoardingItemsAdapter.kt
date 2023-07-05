@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.aryan_atel.Models.OnBoardingItems
+import com.example.aryan_atel.models.OnBoardingItems
 import com.example.aryan_atel.R
 
 public class OnBoardingItemsAdapter(private val onBoardingItems: List<OnBoardingItems>) :

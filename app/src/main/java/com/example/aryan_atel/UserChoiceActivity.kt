@@ -14,5 +14,9 @@ class UserChoiceActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, UploadImagesActivity:: class.java))
 
         }
+        findViewById<Button>(R.id.btnFeeds).setOnClickListener {
+            startActivity(Intent(applicationContext, ImagesActivity:: class.java))
+
+        }
     }
 }

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.aryan_atel.Models.OnBoardingItems
+import com.example.aryan_atel.models.OnBoardingItems
 import com.example.aryan_atel.adapters.OnBoardingItemsAdapter
 
 
@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 }
-                
+
 
             } else {
                 imageView.setImageDrawable(

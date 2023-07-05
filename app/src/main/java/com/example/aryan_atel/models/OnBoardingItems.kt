@@ -1,4 +1,4 @@
-package com.example.aryan_atel.Models
+package com.example.aryan_atel.models
 
 class OnBoardingItems(
 
