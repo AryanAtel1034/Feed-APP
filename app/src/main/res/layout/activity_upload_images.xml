@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadImagesActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/side"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="11dp"
+            android:contentDescription="@string/upload_images"
+            android:onClick="backPress"
+            android:src="@drawable/arrow" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@string/or"
+            android:src="@drawable/checklist" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="9dp"
+            android:layout_toEndOf="@+id/side"
+            android:text="@string/upload_images"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgSelectedImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="26dp"
+        android:contentDescription="@string/or"
+        android:src="@drawable/lap" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSelectedImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/select_images"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelect"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="54dp"
+        android:text="@string/upload_images"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

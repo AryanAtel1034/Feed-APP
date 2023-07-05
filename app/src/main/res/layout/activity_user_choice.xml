@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserChoiceActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/choice"
+        android:contentDescription="@string/illustration"/>
+
+    <Button
+        android:id="@+id/btnFeeds"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/feeds"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFeeds"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="54dp"
+        android:text="@string/upload_images"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>
