@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity() {
                         ContextCompat.getColor(this@MainActivity, R.color.orange)
 
                     val readyButton = findViewById<Button>(R.id.btnReady)
-                    readyButton.text = "Ready"
+                    readyButton.text = "Ready "
 
                     readyButton.setOnClickListener {
                         navigateToUserChoiceActivity()
